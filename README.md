@@ -7,10 +7,9 @@
 - [🧹 Data Preprocessing](#data-preprocessing)
 - [🤖 Models Implemented](#models-implemented)
   - [🔹 Logistic Regression](#1-logistic-regression)
-  - [🔹 Support Vector Machine (SVM)](#2-support-vector-machine-svm)
-  - [🔹 Random Forest](#3-random-forest)
-  - [🔹 AdaBoost with Logistic Regression](#4-adaboost-with-logistic-regression)
-  - [🔹 AdaBoost with Decision Trees](#5-adaboost-with-decision-trees)
+  - [🔹 Random Forest](#2-random-forest)
+  - [🔹 AdaBoost with Logistic Regression](#3-adaboost-with-logistic-regression)
+  - [🔹 AdaBoost with Decision Trees](#4-adaboost-with-decision-trees)
 - [📈 Key Findings](#key-findings)
 - [✍️ Contributors](#️-contributors)
 
@@ -55,32 +54,26 @@ Predict airline passenger satisfaction levels based on survey data to help airli
   - Training F1-score: `0.88`  
   - Testing F1-score: `0.87`
 
-### 🔹 2. Support Vector Machine (SVM)
-<a name="2-support-vector-machine-svm"></a>  
-- Tuned hyperparameters `C` and `gamma`  
-- Attempted RBF kernel (too slow), switched to linear kernel  
-- Best validation accuracy: `87%` (similar to logistic regression)
-
-### 🔹 3. Random Forest
-<a name="3-random-forest"></a>  
+### 🔹 2. Random Forest
+<a name="2-random-forest"></a>  
 - Parameters: `max_depth=20`, `min_samples_leaf=5`, `class_weight='balanced'`  
 - Tuned number of estimators  
 - Used 5-fold cross-validation
 
-### 🔹 4. AdaBoost with Logistic Regression
-<a name="4-adaboost-with-logistic-regression"></a>  
+### 🔹 3. AdaBoost with Logistic Regression
+<a name="3-adaboost-with-logistic-regression"></a>  
 - Base estimator: `LogisticRegression(max_iter=1000)`  
 - Tuned number of estimators and learning rate  
 - **Results:**  
   - Training F1-score: `0.93`  
   - Testing F1-score: `0.93`
 
-### 🔹 5. AdaBoost with Decision Trees
-<a name="5-adaboost-with-decision-trees"></a>  
+### 🔹 4. AdaBoost with Decision Trees
+<a name="4-adaboost-with-decision-trees"></a>  
 - Tested decision stumps and trees (`max_depth=6`)  
 - **Results:**  
-  - Decision stumps accuracy: `0.93`  
-  - Deeper trees (`max_depth=6`) accuracy: `0.96`
+  - Decision stumps F1-score: `0.93`  
+  - Deeper trees (`max_depth=6`) F1-score: `0.96`
 
 ---
 
